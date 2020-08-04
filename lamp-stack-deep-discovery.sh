@@ -12,11 +12,4 @@ echo "$service is not running!!!"
 
 fi
 }
-# same process need to find the wordpress
-get_running_wordpress_instance(){
-
-
-}
-
 get_running_moodle_instance
-#get_running_wordpress_instance
