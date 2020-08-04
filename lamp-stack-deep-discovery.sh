@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # get the info if the moodle instance is present, second find the moodle folder path and third find the moodledata path
-get running moodle instance(){
+get_running_moodle_instance(){
 service=moodle
 
 if (( $(ps -ef | grep -v grep | grep $service | wc -l) > 0 ))
@@ -13,10 +13,10 @@ echo "$service is not running!!!"
 fi
 }
 # same process need to find the wordpress
-get running wordpress instance(){
+get_running_wordpress_instance(){
 
 
 }
 
-get running moodle instance
-#get running wordpress instance
+get_running_moodle_instance
+#get_running_wordpress_instance
